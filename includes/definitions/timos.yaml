@@ -17,3 +17,17 @@ discovery_modules:
     cisco-vrf-lite: false
 poller_modules:
     bgp-peers: true
+oids:
+    no_bulk:
+        - tmnxDigitalDiagMonitorEntry
+        - tmnxDDMExternallyCalibrated
+        - tmnxDDMRxOpticalPower
+        - tmnxDDMRxOpticalPowerLowAlarm
+        - tmnxDDMRxOpticalPowerLowWarning
+        - tmnxDDMRxOpticalPowerHiAlarm
+        - tmnxDDMRxOpticalPowerHiWarning
+        - tmnxDDMTxOutputPower
+        - tmnxDDMTxOutputPowerLowAlarm
+        - tmnxDDMTxOutputPowerLowWarning
+        - tmnxDDMTxOutputPowerHiAlarm
+        - tmnxDDMTxOutputPowerHiWarning
