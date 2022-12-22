@@ -40,8 +40,10 @@ if ($device['os'] == 'junos') {
     $instant_index = 2;
 } elseif ($device['os'] == 'timos') {
     $entity_array = [];
-    echo 'tmnxHwObjs';
-    $entity_array = snmpwalk_cache_multi_oid($device, 'tmnxHwObjs', $entity_array, 'TIMETRA-CHASSIS-MIB', 'nokia');
+    echo 'tmnxHwTable';
+    $entity_array = snmpwalk_cache_multi_oid($device, 'tmnxHwTable', $entity_array, 'TIMETRA-CHASSIS-MIB', 'nokia');
+    echo 'tmnxCardTypeTable';
+    $entity_array = snmpwalk_cache_multi_oid($device, 'tmnxCardTypeTable', $entity_array, 'TIMETRA-CHASSIS-MIB', 'nokia');
 } else {
     $entity_array = [];
     echo ' entPhysicalEntry';
