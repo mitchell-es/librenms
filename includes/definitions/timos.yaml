@@ -7,6 +7,7 @@ ifname: true
 over:
     - { graph: device_bits, text: 'Device Traffic' }
 icon: nokia
+snmp_max_oid: 1
 discovery:
     -
         sysObjectID:
@@ -31,3 +32,4 @@ oids:
         - tmnxDDMTxOutputPowerLowWarning
         - tmnxDDMTxOutputPowerHiAlarm
         - tmnxDDMTxOutputPowerHiWarning
+        - tmnxDDMLaneTable
