@@ -86,6 +86,9 @@ function get_mib_dir($device)
  */
 function mibdir($mibdir = null, $device = null)
 {
+    if (isset($mibdir) && $mibdir == "") {
+	    return("");
+    };
     $dirs = is_array($device) ? get_mib_dir($device) : [];
 
     $base = Config::get('mib_dir');
